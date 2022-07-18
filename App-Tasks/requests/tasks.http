@@ -1,0 +1,31 @@
+###--------------------------------------------------------
+GET http://localhost:3000/api/tasks
+
+###--------------------------------------------------------
+GET http://localhost:3000/api/tasks/done
+
+###--------------------------------------------------------
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title":"Ir al centro",
+    "description":"Buscar libros",
+    "done": true
+}
+
+###--------------------------------------------------------
+GET http://localhost:3000/api/tasks/62d458d7f3e31dd3ffa6532d
+
+###--------------------------------------------------------
+PUT http://localhost:3000/api/tasks/62d458d7f3e31dd3ffa6532d
+Content-Type: application/json
+
+{
+    "title":"Hacer cosas nuevas varias",
+    "description":"play instrumentos locos",
+    "done": true
+}
+
+###--------------------------------------------------------
+DELETE http://localhost:3000/api/tasks/62d38da8c490033b01b5d88c
